@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Starter Template for Bootstrap 3.3.7</title>
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<style>
+		.starter-template {
+			background-color: darkgray;
+			text-align: center;
+			padding:20px;
+		}
+		
+		.navbar .navbar-nav {
+			display: inline-block;
+			float: none;
+			vertical-align: top;
+			
+		}
+		
+		nav {
+			
+			text-align: center;
+			padding-bottom: 20px;
+			font-size: 40px
+		}
+		
+		#listcontainer {
+			text-align: center;
+			width: 400px;
+			padding: 50px;
+			border: 12px solid;
+			background-color: lightgoldenrodyellow;
+			
+		}
+		
+		body{
+		}
+		
+		textarea{
+			width: 800px;
+			height: 35px;
+			margin:10spx;
+		}
+		
+		button{
+			display:block;
+			width:100px;
+			padding:10px;
+		}
+		
+		div{
+			text-align: center
+		}
+		
+		li:hover {
+			background-color: yellow;
+		}
+	</style>
+
+	<!--[if IE]>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>				<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+				<![endif]-->
+</head>
+
+<body>
+	<!-- Image and text -->
+	<nav class="navbar navbar-default" style="text-align:'center'">
+		<img src="todo.png" width="50" height="60" class="d-inline-block align-center" alt="NOthing here" style="display:inline-block">
+		<h1 style="display:inline-block" class="display1">Todo list</h1>
+	</nav>
+	<div class="jumbotron">
+	<div class="container" style="text-align:center">
+		<div class="starter-template">
+		<form action="" method="POST">
+			<textarea placeholder="Write your task here." id="task"></textarea><br>
+			<button type="button" class="btn btn-secondary" id="addTask">Add task</button>
+		</form>
+		</div>
+	</div>
+	</div>
+		<div class="container" id="listcontainer">
+			<h2 class="display2"> Your Todo List </h2>
+			<ol class="list-group" id= "list">
+				<!-- adding li tags here -->
+			</ol>
+		</div>
+	
+	
+</body>
+<script src="todo.js"></script>
+
+</html>
